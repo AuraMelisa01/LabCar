@@ -2,11 +2,24 @@
     margin: 0;
 }
 
+.back-color-yellow {
+    background-color: #F7B617;
+}
+
+.back-color-black {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.back-color-black {
+    background-color: black;
+}
+
 .container-fluid {
     padding: 0!important;
 }
 
-.img-header {
+.img-header,
+.car {
     justify-content: flex-end;
     align-items: center;
     position: relative;
@@ -15,9 +28,14 @@
 .banner-text,
 .banner-text-mobile {
     position: absolute;
-    background-color: #F7B617;
     color: white;
     width: 40%;
+}
+
+.black-car {
+    position: absolute;
+    color: white;
+    width: 30%;
 }
 
 .div-bord {
@@ -25,7 +43,9 @@
 }
 
 .division,
-.iphone {
+.iphone,
+.tarifas,
+.content-foot {
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -40,7 +60,8 @@
     line-height: 30px;
 }
 
-.iphone {
+.iphone,
+.tarifas {
     color: white;
     background-color: #F7B617;
 }
@@ -48,6 +69,44 @@
 .iphone .d-flex {
     width: 80%;
     justify-content: space-around;
+}
+
+.car {
+    align-items: flex-start!important;
+}
+
+.black-car {
+    height: 100%;
+    align-items: center;
+}
+
+.tarifas {
+    justify-content: space-around;
+}
+
+.cont-tarifas {
+    width: 50%;
+    padding: 5%;
+}
+
+.cont-tarifas .d-flex {
+    align-items: baseline;
+    justify-content: center;
+}
+
+.footer .cont-d.d-flex,
+.cont-text-3 {
+    flex-direction: column;
+}
+
+.content-foot {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.cont-text-1 {
+    position: relative;
+    right: 0;
 }
 
 
@@ -60,8 +119,35 @@
     .logo-small {
         width: 30%;
     }
-    .iphone {
+    .iphone,
+    .tarifas {
         flex-direction: column;
         justify-content: center;
+    }
+    .black-car,
+    .cont-tarifas {
+        width: 100%;
+    }
+    .tarifas .border {
+        margin-top: 10%;
+    }
+    .content-foot {
+        align-items: end;
+    }
+    .content-text-2 {
+        order: 1;
+        position: relative;
+    }
+    .cont-text-1 {
+        order: 2;
+        position: absolute;
+        right: 10%;
+    }
+    .cont-text-3 {
+        order: 3;
+        align-self: center;
+    }
+    .text-white.one {
+        padding: 0px!important;
     }
 }

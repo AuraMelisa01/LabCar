@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LabCar</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -38,10 +40,10 @@
         </nav>
         <header>
             <div class="d-flex img-header">
-                <img src="assets/images/taxi-corto.png" alt="" class="img-fluid d-none d-md-block d-lg-block">
-                <img src="assets/images/taxi.jpg" alt="" class="img-fluid d-block d-sm-block d-md-none">
+                <img src="assets/images/taxi-corto-desk.png" alt="" class="img-fluid d-none d-md-block d-lg-block">
+                <img src="assets/images/taxi-mobile.png" alt="" class="img-fluid d-block d-sm-block d-md-none">
                 <!--BANNER DESK-->
-                <div class="banner-text p-4 d-none d-md-block d-lg-block">
+                <div class="banner-text back-color-yellow p-4 d-none d-md-block d-lg-block">
                     <h3 class="mb-0">Disfruta del viaje </h3>
                     <h3 class="pb-4">Eres dueño de tu tiempo </h3>
 
@@ -49,15 +51,15 @@
 
                     <button type="button" class="btn btn-light">REGÍSTRATE</button>
                     <div class="division text-center d-flex pt-4 pb-4">
-                        <div class="border-top border-light div-bord"></div>
+                        <div class="border-top border-white div-bord"></div>
                         <div class="div-bord">O bien</div>
-                        <div class="border-top border-light div-bord"></div>
+                        <div class="border-top border-white div-bord"></div>
                     </div>
 
                     <button type="button" class="btn btn-light">Conviértete en un conductor</button>
                 </div>
                 <!--BANNER MOBILE-->
-                <div class="banner-text-mobile p-5 d-block d-sm-block d-md-none">
+                <div class="banner-text-mobile back-color-yellow p-5 d-block d-sm-block d-md-none">
                     <h1 class="mb-0">Comienza a viajar </h1>
                     <h1 class="pb-4">con <span> <img src="assets/images/logoBlanco.png" alt="" class="img-fluid logo-small pl-2"></span></h1>
                     <button type="button" class="btn btn-light">Descarga el app</button>
@@ -67,7 +69,7 @@
         <section>
             <!--phone DESK-->
             <div class="iphone p-5 text-justify d-none d-md-block d-lg-block" style="padding-left: 0px!important;">
-                <div class="d-flex p-5 border border-light">
+                <div class="d-flex p-5 border border-white">
                     <div class="app">
                         <img src="assets/images/iPhone6Plus.png" alt="" class="img-fluid">
                     </div>
@@ -80,7 +82,7 @@
             </div>
             <!--phone MOBILE-->
             <div class="iphone p-5 text-justify d-block d-sm-block d-md-none">
-                <div class="p-5 border border-light">
+                <div class="p-5 border border-white">
                     <div class="app text-center">
                         <h3 class="pb-4">La nueva app</h3>
                     </div>
@@ -91,11 +93,90 @@
                 <p class="pt-3">Llega a tu destino aún más rápido.</p>
             </div>
         </section>
+        <section>
+            <div class="car d-flex position-relative">
+                <img src="assets/images/conduce-desk.png" alt="" class="img-fluid d-none d-md-block d-lg-block">
+                <img src="assets/images/conduce.jpg" alt="" class="img-fluid d-block d-sm-block d-md-none">
+                <div class="black-car d-flex back-color-black p-4 pt-5 pb-5 position-absolute black-car">
+                    <div class="">
+                        <h3 class="pb-4">Conduce cuando quieras</h3>
+                        <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+                        <button type="button" class="btn btn-warning">Conviértete en conductor</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="tarifas d-flex p-5">
+                <div class="cont-tarifas">
+                    <h3>Tarifas</h3>
+                    <p>Consulta las tarifas LabCar aquí</p>
 
+                    <div class="d-flex pt-3 pb-3">
+                        <p><img src="assets/images/shape.png" alt="" class="img-fluid pr-2"></p>
+                        <input type="partida" class="form-control" id="partida1" aria-describedby="partida" placeholder="Ingrese su punto de partida">
+                    </div>
+                    <div class="d-flex">
+                        <p><img src="assets/images/shape2.png" alt="" class="img-fluid pr-2"></p>
+                        <input type="destino" class="form-control" id="destino1" aria-describedby="destino" placeholder="Ingrese su destino">
+                    </div>
+                    <div class="d-flex btn-tar pt-4">
+                        <button type="button" class="btn btn-light">¡TRAZAR RUTA!</button>
+                    </div>
+
+                </div>
+                <div class="border border-white p-3">
+                    <img src="assets/images/ruta.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="footer back-color-black">
+                <div class="cont-d d-flex p-5">
+                    <div class="img-foot border-bottom border-white pb-3">
+                        <img src="assets/images/logoBlanco.png" alt="" class="img-fluid pl-2">
+                    </div>
+                    <div class="content-foot d-flex pt-4 border-bottom border-white pb-3">
+                        <div class="cont-text-1 text-white">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                            <i class="fab fa-apple"></i>
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="d-flex cont-text-2">
+                            <div class="pl-5 pr-5 text-white one">
+                                <p>Viaja</p>
+                                <p>Conduce</p>
+                                <p>Ciudades</p>
+                                <p>Entregas</p>
+                                <p>Cómo funciona?</p>
+                                <p>Países</p>
+                                <p>Seguridad</p>
+                                <p>App</p>
+                            </div>
+                            <div class="pl-5 pr-5 text-white two d-none d-md-block d-lg-block">
+                                <p>Oportunidades</p>
+                                <p>Nuestra historia</p>
+                                <p>API de LabCar</p>
+                                <p>Eventos</p>
+                                <p>Desarrolladores</p>
+                                <p>Servicios</p>
+                                <p>Laboratoria</p>
+                                <p>Coders</p>
+                            </div>
+                        </div>
+                        <div class="d-flex cont-text-3">
+                            <img src="assets/images/appstore.png" alt="">
+                            <img src="assets/images/enBadgeWebGeneric.png" alt="">
+                        </div>
+                    </div>
+                    <p class="pt-2 text-white"> © 2017 LabCar Technologies Inc.</p>
+                </div>
+            </div>
     </div>
-
-
-
+    </section>
+    </div>
 
     <!--SCRIPTS-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
