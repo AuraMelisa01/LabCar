@@ -109,6 +109,15 @@
     right: 0;
 }
 
+.collapse {
+    justify-content: flex-end;
+}
+
+.navbar {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 
 /* Medium devices (tablets, 768px and up) */
 
