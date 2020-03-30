@@ -2,7 +2,8 @@
     margin: 0;
 }
 
-.back-color-yellow {
+.back-color-yellow,
+.modal-header.login-icon {
     background-color: #F7B617;
 }
 
@@ -10,8 +11,12 @@
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.back-color-black {
+.back-color-black-black {
     background-color: black;
+}
+
+.modal-content.back-color-gray {
+    background-color: #A9A9A9;
 }
 
 .container-fluid {
@@ -116,6 +121,24 @@
 .navbar {
     margin-left: 5%;
     margin-right: 5%;
+}
+
+.fa-user-circle {
+    font-size: 100px;
+}
+
+.modal-header.login-icon,
+.input-group.align {
+    display: flex;
+    justify-content: center;
+}
+
+.foot-login p span {
+    color: brown;
+}
+
+p.text-muted {
+    font-size: 15px;
 }
 
 

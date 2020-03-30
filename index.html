@@ -24,16 +24,15 @@
             <div class="collapse navbar-collapse m-3" id="navbarTogglerDemo03">
                 <ul class="navbar-nav ">
                     <li class="nav-item ">
-                        <a class="nav-link " href="# ">Viaja</a>
+                        <a class="nav-link" href="#">Viaja</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="# ">Conduce</a>
+                        <a class="nav-link" href="#">Conduce</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="# ">Iniciar Sesión</a>
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#login">Iniciar Sesión</a>
                     </li>
                 </ul>
-
             </div>
 
         </nav>
@@ -48,14 +47,14 @@
 
                     <p>Viaja con <span> <img src="assets/images/logoBlanco.png " alt=" " class="img-fluid logo-small pl-2 "></span></p>
 
-                    <button type="button " class="btn btn-light ">REGÍSTRATE</button>
+                    <button type="button " class="btn btn-light" data-toggle="modal" data-target="#registrate">REGÍSTRATE</button>
                     <div class="division text-center d-flex pt-4 pb-4 ">
                         <div class="border-top border-white div-bord "></div>
                         <div class="div-bord ">O bien</div>
                         <div class="border-top border-white div-bord "></div>
                     </div>
 
-                    <button type="button " class="btn btn-light ">Conviértete en un conductor</button>
+                    <button type="button " class="btn btn-light" data-toggle="modal" data-target="#conductor">Conviértete en un conductor</button>
                 </div>
                 <!--BANNER MOBILE-->
                 <div class="banner-text-mobile back-color-yellow p-5 d-block d-sm-block d-md-none ">
@@ -100,7 +99,7 @@
                     <div class=" ">
                         <h3 class="pb-4 ">Conduce cuando quieras</h3>
                         <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-                        <button type="button " class="btn btn-warning ">Conviértete en conductor</button>
+                        <button type="button " class="btn btn-warning" data-toggle="modal" data-target="#conductor">Conviértete en conductor</button>
                     </div>
                 </div>
             </div>
@@ -130,7 +129,7 @@
             </div>
         </section>
         <section>
-            <div class="footer back-color-black ">
+            <div class="footer back-color-black-black ">
                 <div class="cont-d d-flex p-5 ">
                     <div class="img-foot border-bottom border-white pb-3 ">
                         <img src="assets/images/logoBlanco.png " alt=" " class="img-fluid pl-2 ">
@@ -175,6 +174,161 @@
             </div>
     </div>
     </section>
+    </div>
+
+
+    <!-- Modal INICIAR SESION -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header login-icon">
+                    <i class="fas fa-user-circle"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col-auto">
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fas fa-user"></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Usuario">
+                            </div>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fas fa-lock"></i></i>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Contraseña">
+                            </div>
+                            <div class="input-group mb-2 align">
+                                <button type="button" class="btn btn-warning">INICIAR</button>
+                            </div>
+                            <div class="input-group mb-2 foot-login align">
+                                <p>Recuperar Contraseña? <span>Click aquí.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal REGISTRATE -->
+    <div class="modal fade" id="registrate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content back-color-gray">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col-auto">
+                            <div class="input-group mb-2 align">
+                                <button type="button" class="btn btn-dark btn-lg btn-block">Ya tienes una cuenta?</button>
+                                <p class="m-2">O crea una cuenta nueva...</p>
+                            </div>
+                            <div class="input-group mb-2 align form-row w-auto">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Nombre">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Apellido">
+                                </div>
+                            </div>
+                            <div class="input-group mb-2 align">
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Correo electrónico: ejempplo@correo.mx">
+                            </div>
+                            <div class="input-group mb-2 align">
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Teléfono">
+                            </div>
+                            <div class="input-group mb-2 align">
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Contraseña">
+                            </div>
+                            <div class="input-group mb-2 align">
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ciudad">
+                            </div>
+                            <div class="input-group mb-2 align">
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="(Opcional) Código de invitación">
+                            </div>
+                            <div class="input-group mb-2 align">
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Facebook</option>
+                                    <option>Twitter</option>
+                                    <option>Play Store</option>
+                                    <option>Mac Store</option>
+                                    <option>Recomendación</option>
+                                </select>
+                            </div>
+                            <div class="input-group mb-2 align">
+                                <button type="button" class="btn btn-warning btn-lg btn-block">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal CONVIERTETE EN CONDUCTOR -->
+    <div class="modal fade" id="conductor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content back-color-gray">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col-auto">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1" class="font-weight-bold">¿Tienes vehículo de 4 puertas?</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Sí</option>
+                                  <option>No</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1" class="font-weight-bold">Marca</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>¿Elige la marca del vehiculo?</option>
+                                  <option>Ford</option>
+                                  <option>Mazda</option>
+                                  <option>Suzuki</option>
+                                  <option>Toyota</option>
+                                  <option>...</option>
+                                </select>
+                                <p class="text-justify text-muted">¿No vez tu vehículo en la lista? Envía un correo electrónico: <span class="text-primary">sociosmdv@labcar.com</span></p>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1" class="font-weight-bold">Modelo</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Toyota Corolla</option>
+                                  <option>Chevrolet Aveo</option>
+                                  <option>Suzuki Swift</option>
+                                  <option>Toyota Rav4</option>
+                                  <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1" class="font-weight-bold">Año</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>2020</option>
+                                  <option>2019</option>
+                                  <option>2018</option>
+                                  <option>42017</option>
+                                  <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1" class="font-weight-bold">Número de matrícula</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Número de matrícula">
+                                <p class="text-justify text-muted">La información de la matrícula ayuda a los clientes a identificar tu vehículo.</p>
+                            </div>
+                            <div class="input-group mb-2 align">
+                                <button type="button" class="btn btn-warning btn-lg btn-block">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 
     <!--SCRIPTS-->
